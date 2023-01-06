@@ -13,6 +13,6 @@
 
 * add a new arg in with argparse to take the value of limit time variable and continue and continue
 
-* add payloads into the headers to make the website sleep for [limit_rate] and then optimize the code and make it cleaner
+* add payloads into the headers to make the website sleep for [limit_rate] and then optimize the code
 
 ### The code has some Errors and things must be edited but It`s not so bad deal with
