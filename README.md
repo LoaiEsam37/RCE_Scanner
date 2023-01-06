@@ -11,7 +11,7 @@
 
 * try to improve the scanner abilty and add more print functions to see every move in the programme
 
-* add a new arg in with argparse to take the value of limit time variable and continue and continue
+* add a new arg in with argparse to take the value of limit time variable
 
 * add payloads into the headers to make the website sleep for [limit_rate] and then optimize the code
 
