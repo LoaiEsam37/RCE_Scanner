@@ -26,11 +26,16 @@ def scan_url(url, rate_limit, headers, cookies, params):
 
                 # Send a GET request with the modified headers, cookies, and parameters
                 response = requests.get(url, headers=header, cookies=cookie, params=param)
+                 # Get the elapsed time of the request
+                elapsed_time = response.elapsed.total_seconds()
 
-                # If the server responds with a "200 OK" status code, it could be an indication of an RCE vulnerability
-                if response.status_code == 200:
+                # If the elapsed time is greater than the rate limit, it could be an indication of an RCE vulnerability
+                if elapsed_time > rate_limit:
                     print("Possible RCE vulnerability detected!")
                     return True
+                else:
+                    print("No RCE vulnerabilities detected.")
+     
 
     print("No RCE vulnerabilities detected.")
     return False
