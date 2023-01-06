@@ -21,7 +21,6 @@ def scan_url(url, rate_limit, headers, cookies, params):
                 print(f"Scanning with header: {header}, cookie: {cookie}, param: {param}")
 
                 # Add a payload to the headers to make the server sleep for the rate limit time
-                # Add a payload to the headers to make the server sleep for the rate limit time
                 header["X-Sleep"] = f"sleep({rate_limit})"
 
                 # Send a GET request with the modified headers, cookies, and parameters
